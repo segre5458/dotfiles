@@ -3,5 +3,5 @@
 .vim/bundles/cache_vim
 .vim/bundles/state_vim.vim
 
-.vim/plugins/
+tmux/plugins/
 
