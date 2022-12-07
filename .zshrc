@@ -15,6 +15,7 @@ alias reboot='sudo shutdown -r now'
 alias blenderlauncher='/home/segre/Documents/blender/addon/Blender\ Launcher'
 alias suspend='systemctl suspend -i'
 alias ls='ls --color=auto'
+alias l=`ls`
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
