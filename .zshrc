@@ -21,8 +21,24 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias la='ls -Al'
 alias g='git'
+alias ga='git add -p'
+alias gc='git commit'
+alias gs='git status'
+alias gp='git push'
 alias l='ls -CF'
 alias vi='vim'
 alias sudoe='sudo -e'
 alias c='clear'
 alias sjis='iconv -f SJIS'
+alias tmux='tmux -u2'
+
+# tmux open
+count=`ps aux | grep tmux | grep -v grep | wc -l`
+if test $count -eq 0; then
+      echo `tmux`
+    elif test $count -eq 1; then
+          echo `tmux a`
+fi
+
+# xbindkeys
+xbindkeys
