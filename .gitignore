@@ -1,4 +1,4 @@
-/.vim/bundles/
+/.vim/bundles/*
 !/.vim/bundles/userconfig/
 !/.vim/config/init/
 !/.vim/install.sh
