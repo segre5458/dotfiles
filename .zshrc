@@ -53,3 +53,20 @@ if [ -n "$wacom_pad" ]; then
   xsetwacom --set "$wacom_pad" Button 2 "key +ctrl - -ctrl"
 fi
 
+# zplug
+source ~/.zplug/init.zsh
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+zplug "mafredri/zsh-async"
+zplug "zsh-users/zsh-completions"
+zplug "chrissicool/zsh-256color"
+zplug "rupa/z"
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+      if read -q; then
+            echo; zplug install
+              fi
+fi
+HISTSIZE=10000
+SAVEHIST=10000
+zplug load
