@@ -42,3 +42,13 @@ fi
 
 # xbindkeys
 xbindkeys
+
+# Wacom Keyboard
+wacom_pad=`xsetwacom --list devices | cut -d' ' -f1-7 --output-delimiter=" " | grep "Pad" | sed 's/ *$//'`
+wacom_pen=`xsetwacom --list devices | cut -d' ' -f1-7 --output-delimiter=" " | grep "Pen" | sed 's/ *$//g'`
+if [ -n "$wacom_pad" ]; then
+  xsetwacom --set "$wacom_pad" Button 3 "key +ctrl z -ctrl"
+  xsetwacom --set "$wacom_pad" Button 1 "key +ctrl +shift ; -shift -ctrl"
+  xsetwacom --set "$wacom_pad" Button 2 "key +ctrl - -ctrl"
+fi
+
