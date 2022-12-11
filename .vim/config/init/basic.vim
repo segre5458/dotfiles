@@ -37,5 +37,3 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 let mapleader = "\<Space>"
 
-set clipboard&
-set clipboard^=unnamedplus
