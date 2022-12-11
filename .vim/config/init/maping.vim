@@ -1,5 +1,9 @@
 nnoremap j gj
 nnoremap k gk
+imap <C-p> <Up>
+imap <C-n> <Down>
+imap <C-b> <Left>
+imap <C-f> <Right>
 
 "vim-fugitive
 nnoremap <leader>ga :Gwrite<CR>
