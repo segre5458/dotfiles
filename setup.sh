@@ -28,3 +28,7 @@ fi
 if [ ! -e ~/.xbindkeysrc ]; then
   ln -s ~/dotfiles/.xbindkeysrc ~/.xbindkeysrc
 fi
+
+if [ ! -e ~/z.sh ]; then
+  ln -s ~/dotfiles/z.sh ~/z.sh
+fi
