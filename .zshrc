@@ -60,7 +60,7 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug "mafredri/zsh-async"
 zplug "zsh-users/zsh-completions"
 zplug "chrissicool/zsh-256color"
-source ~/bin/z/z.sh
+source ~/z.sh
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
