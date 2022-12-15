@@ -72,3 +72,7 @@ fi
 HISTSIZE=10000
 SAVEHIST=10000
 zplug load
+
+# opam configuration
+[[ ! -r /home/segre/.opam/opam-init/init.zsh ]] || source /home/segre/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+eval `opam config env`
