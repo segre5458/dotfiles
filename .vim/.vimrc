@@ -39,6 +39,3 @@ endif
 if dein#check_install()
  call dein#install()
 endif
-
-runtime! config/init/*.vim
-runtime! config/plugins-config/*.vim

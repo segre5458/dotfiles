@@ -1,0 +1,1 @@
+/home/segre/dotfiles/.vim/
