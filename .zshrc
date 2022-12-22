@@ -72,6 +72,7 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zdharma/fast-syntax-highlighting"
 zplug "zdharma/history-search-multi-word"
 zplug romkatv/powerlevel10k, as:theme, depth:1
+zplug "marlonrichert/zsh-autocomplete"
 
 source ~/z.sh
 # Install plugins if there are plugins that have not been installed

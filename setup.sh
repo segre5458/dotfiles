@@ -16,3 +16,4 @@ ln --force -s ~/dotfiles/.zprofile ~/.zprofile
 ln --force -s ~/dotfiles/.xbindkeysrc ~/.xbindkeysrc
 
 ln --force -s ~/dotfiles/z.sh ~/z.sh
+
