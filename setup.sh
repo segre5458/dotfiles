@@ -1,34 +1,17 @@
 #!/bin/sh
-if [ ! -e ~/.vimrc ]; then
-  ln -s ~/dotfiles/.vimrc ~/.vimrc
-fi
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.vim ~/.vim
 
-if [ ! -d ~/.vim ]; then
-  ln -s ~/dotfiles/.vim ~/.vim
-fi
+ln -s ~/dotfiles/tmux ~/.config/tmux
 
-if [ ! -d ~/.config/tmux ]; then
-  ln -s ~/dotfiles/tmux ~/.config/tmux
-fi
-
-if [ ! -e ~/.zplug ]; then
-  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-fi
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 if [ ! -d ~/bin/z ]; then
   git clone git@github.com:rupa/z.git ~/bin/z
 fi
-if [ ! -e ~/.zshrc ]; then
-  ln -s ~/dotfiles/.zshrc ~/.zshrc
-fi
+ln -s ~/dotfiles/.zshrc ~/.zshrc
 
-if [ ! -e ~/.zprofile ]; then
-  ln -s ~/dotfiles/.zprofile ~/.zprofile
-fi
+ln -s ~/dotfiles/.zprofile ~/.zprofile
 
-if [ ! -e ~/.xbindkeysrc ]; then
-  ln -s ~/dotfiles/.xbindkeysrc ~/.xbindkeysrc
-fi
+ln -s ~/dotfiles/.xbindkeysrc ~/.xbindkeysrc
 
-if [ ! -e ~/z.sh ]; then
-  ln -s ~/dotfiles/z.sh ~/z.sh
-fi
+ln -s ~/dotfiles/z.sh ~/z.sh
