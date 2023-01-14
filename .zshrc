@@ -33,6 +33,7 @@ alias c='clear'
 alias sjis='iconv -f SJIS'
 alias tmux='tmux -u2'
 alias cxx='g++ -std=c++17 -Wall -O2 -g -fsanitize=undefined -D_GLIBCXX_DEBUG'
+alias pdf="evince"
 
 # tmux open
 count=`ps aux | grep tmux | grep -v grep | wc -l`
